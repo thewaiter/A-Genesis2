@@ -10185,7 +10185,7 @@ CONNMAN_ICON(ethernet)
 /*** MOD: CLOCK ***/
 
    fonts {
-  font: "VeraMono.ttf" "VeraMono";
+  //font: "VeraMono.ttf" "VeraMono";
 }
 
 images {
@@ -12154,9 +12154,9 @@ group {
       alias: "e/modules/systray/main/default";
       alias: "e/modules/systray/main/invisible";
       data {
-         item: "inset" "255 255 255";
-         item: "plain" "230 230 230";
-         item: "default" "255 255 255";
+         item: "inset" "008 014 024";
+         item: "plain" "008 014 024";
+         item: "default" "008 014 024";
       }
       parts {
          part {
@@ -12179,8 +12179,8 @@ group {
             description {
                state: "default" 0.0;
                color: 0 0 0 0;
-               rel1.offset: 4 4;
-               rel2.offset: -5 -5;
+               rel1.offset: -1 0;
+               rel2.offset: 0 -1;
             }
          }
          part {
@@ -12334,10 +12334,11 @@ group {
    }
    group {
       name: "e/modules/systray/main/alternate";
+      alias: "e/modules/systray/main/alternate_vertical";
       data {
-         item: "inset" "255 255 255";
-         item: "plain" "255 255 255";
-         item: "default" "255 255 255";
+         item: "inset" "002 002 058";
+         item: "plain" "002 002 058";
+         item: "default" "002 002 058";
       }
       images.image: "systray_rounded_corners.png" COMP;
       parts {
@@ -12384,8 +12385,8 @@ group {
             description {
                state: "default" 0.0;
                color: 0 0 0 0;
-               rel1.offset: 4 4;
-               rel2.offset: -5 -5;
+               rel1.offset: -1 0;
+               rel2.offset: 0 -1;
             }
          }
          part {
@@ -12539,6 +12540,7 @@ group {
    }
    group {
       name: "e/modules/systray/main/alternate/inset";
+      alias: "e/modules/systray/main/alternate_vertical/inset";
       data {
          item: "inset" "255 255 255";
          item: "plain" "255 255 255";
@@ -12565,8 +12567,8 @@ group {
             description {
                state: "default" 0.0;
                color: 0 0 0 0;
-               rel1.offset: 4 4;
-               rel2.offset: -5 -5;
+               rel1.offset: -1 0;
+               rel2.offset: 0 -1;
             }
          }
          part {
